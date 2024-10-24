@@ -1,6 +1,4 @@
 name: Deploy to GitHub Pages
-permissions:
-  id-token: write
 on:
   push:
     branches:
@@ -35,6 +33,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-      - name: Deploy to Pages
-        run: yarn deploy
+
     
