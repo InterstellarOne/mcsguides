@@ -15,10 +15,10 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://$(organizationName).example.com',
+  url: `https://${organizationName}.example.com`,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/$(projectName)/',
+  baseUrl: `/${projectName}/`,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -45,8 +45,7 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            `https://github.com/${organizationName}/${projectName}/tree/main/',
+          editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
         },
         blog: {
           showReadingTime: true,
@@ -57,7 +56,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/${organizationName}/${projectName}/tree/main/',
+          editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
